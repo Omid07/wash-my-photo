@@ -135,13 +135,13 @@ var size         = require('gulp-size');             // Logs out the total size 
 
 
 /**
- * Log Errors
+ * Notify Errors
  */
 function errorLog(err) {
   notify.onError({title: "Gulp Task Error", message: "Check your terminal"})(err); //Error Notification
   console.log(err.toString()); //Prints Error to Console
   this.emit('end');
-}
+};
 
 
 /**
@@ -221,6 +221,7 @@ gulp.task( 'scripts', function() {
  */
 gulp.task( 'render-html', function() {
   return gulp.src( html.src.pages )
+    .pipe( plumber({errorHandler: errorLog}) )
     .pipe(htmlRender({
       path: html.src.templates
     }))
@@ -244,7 +245,7 @@ gulp.task( 'render-html', function() {
   */
 gulp.task( 'image:compress', function() {
   return gulp.src( images.src.files )
-
+    .pipe( plumber({errorHandler: errorLog}) )
     .pipe( imagemin( {
       optimizationLevel: 5, // 0-7 low-high
       progressive: true,

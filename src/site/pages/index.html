@@ -2,11 +2,48 @@
 {% extends "layout.html" %}
 
   {% block content %}
-    <section class="container text">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h1 class="title text-center">Wash My Photo</h1>
+
+    {% include "partials/carousel.html" %}
+
+    <section class="row text-center">
+      <div class="col-xs-6 col-md-3"><p>Chose a service</p></div>
+      <div class="col-xs-6 col-md-3"><p>Personalise with your photos</p></div>
+      <div class="col-xs-6 col-md-3"><p>Checkout securely</p></div>
+      <div class="col-xs-6 col-md-3"><p>Delivery to you direct</p></div>
+    </section>
+
+    <section class="row">
+      <div class="col-xs-12">
+        <div class="row">
+          <h3 class="title text-center">You Favourite</h3>
+          <hr>
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
+          <div class="col-xs-6 col-md-3"><img src="http://placehold.it/400x200" alt="" class="img-responsive center-block"></div>
         </div>
       </div>
+    </section>
+
+    <section class="row">
+      <div class="col-xs-12">
+        <h3 class="text-center">About Us</h3>
+        <hr>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dicta quo recusandae error inventore dolore et deleniti quisquam odit aliquid, quidem libero consequatur at sit eum magnam tempore aperiam similique.</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <h3 class="text-center">Customer Experience</h3>
+      <hr>
+      <div class="col-md-2 col-md-offset-4"><img src="http://placehold.it/100" alt="" class="img-responsive center-block"></div>
+      <div class="col-md-5 "><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam quod neque distinctio voluptatibus hic quia asperiores nulla ea reiciendis ut animi ullam ad, perspiciatis nesciunt soluta placeat facere, iusto!</p></div>
     </section>
   {% endblock %}
