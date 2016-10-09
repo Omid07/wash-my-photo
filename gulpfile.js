@@ -13,7 +13,7 @@
  *      8. InjectCSS instead of browser page reload.
  *
  * @author Jobayer Arman (@JobayerArman)
- * @version 1.2.0
+ * @version 1.2.1
  */
 
 /**
