@@ -56,8 +56,8 @@ var scripts = {
 var html = {
   src: {
     path      : basePaths.src + 'site/',
-    pages     : basePaths.src + 'site/pages/*.html',
-    files     : basePaths.src + 'site/**/*.html',
+    pages     : basePaths.src + 'site/pages/*.+(html|njk)',
+    files     : basePaths.src + 'site/**/*.+(html|njk)',
     templates : basePaths.src + 'site/templates'
   },
   dest: {
@@ -168,20 +168,20 @@ gulp.task('clean', function() {
 
     .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
     .pipe( gulp.dest( styles.dest.path ) )
-    .pipe( browserSync.stream() ) // Injects style.css if that is enqueued
     .pipe( size({
       showFiles: true
     }) )
+    .pipe( browserSync.stream() ) // Injects style.css if that is enqueued
 
     .pipe( rename({suffix: '.min'}))
     .pipe( cssmin({
       keepSpecialComments: false
     }))
     .pipe( gulp.dest( styles.dest.path ) )
-    .pipe( browserSync.stream() ) // Injects style.css if that is enqueued
     .pipe( size({
       showFiles: true
-    }) );
+    }) )
+    .pipe( browserSync.stream() ); // Injects style.css if that is enqueued
 });
 
 
