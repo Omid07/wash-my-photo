@@ -311,7 +311,7 @@ gulp.task( 'default', gulpSequence('clean', 'render-html', 'styles', 'scripts', 
   */
 gulp.task( 'serve', ['render-html', 'styles', 'scripts', 'browser-sync'], function() {
   gulp.watch( watch.html, [ 'render-html', reload] );       // Render files and reload on HTML file changes.
-  gulp.watch( watch.styles, [ 'styles' ] );                 // Reload on SCSS file changes.
+  gulp.watch( watch.styles, [ 'styles' ] );                 // Run LESS task on file changes.
   gulp.watch( watch.scripts, [ 'scripts', reload ] );       // Reload on customJS file changes.
   gulp.watch( watch.images, [ 'image:compress', reload ] ); // Reload on image file changes.
 });

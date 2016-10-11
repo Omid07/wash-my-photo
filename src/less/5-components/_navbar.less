@@ -49,8 +49,6 @@
 
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: @navbar-padding-horizontal;
-  padding-left:  @navbar-padding-horizontal;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
   &:extend(.clearfix all);
@@ -264,11 +262,11 @@
 
   // Uncollapse the nav
   @media (min-width: @grid-float-breakpoint) {
-    float: left;
     margin: 0;
+    text-align: center;
 
     > li {
-      float: left;
+      display: inline-block;
       > a {
         padding-top:    @navbar-padding-vertical;
         padding-bottom: @navbar-padding-vertical;
@@ -276,7 +274,63 @@
     }
   }
 }
+.navbar-default,
+.secondary-nav {
+  .navbar-nav {
+    @media (min-width: @grid-float-breakpoint) {
+      display: table;
+      width: 100%;
 
+      > li {
+        display: table-cell;
+      }
+    }
+  }
+}
+.navbar-default {
+  .navbar-nav {
+    @media (min-width: @grid-float-breakpoint) {
+      display: table;
+      width: 100%;
+
+      > li {
+        display: table-cell;
+
+        &:first-child {
+          a {
+            border-left: 0;
+            border-radius: 3px 0 0 3px;
+          }
+        }
+        &:last-child {
+          a {
+            border-right: 0;
+            border-radius: 0 3px 3px 0;
+          }
+        }
+      }
+    }
+  }
+}
+.secondary-nav {
+  .navbar-nav {
+    font-size: 13px;
+
+    .brand {
+      font-size: 15px;
+    }
+
+    @media (min-width: @grid-float-breakpoint) {
+      > li {
+
+        > a {
+          padding-top:    10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
 
 // Navbar form
 //

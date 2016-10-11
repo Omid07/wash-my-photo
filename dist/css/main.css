@@ -734,7 +734,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.42857143;
   color: #333333;
@@ -823,36 +823,36 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
-/* latin */
+/* Normal */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-/* latin */
+/* Bold */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src: local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-/* latin */
+/* Normal */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v6/LeFlHvsZjXu2c3ZRgBq9nFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-/* latin */
+/* Bold */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://fonts.gstatic.com/s/notosans/v6/PIbvSEyHEdL91QLOQRnZ1-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -883,7 +883,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Montserrat", "Segoe UI", Trebuchet, Tahoma, Arial, sans-serif;
+  font-family: "Raleway", "Segoe UI", Trebuchet, Tahoma, Arial, sans-serif;
   font-weight: 700;
   color: inherit;
 }
@@ -3098,7 +3098,7 @@ fieldset[disabled] .btn-danger.focus {
   color: #333;
   background-color: rgba(0, 0, 0, 0);
   border-color: #333333;
-  font-family: "Montserrat", "Segoe UI", Trebuchet, Tahoma, Arial, sans-serif;
+  font-family: "Raleway", "Segoe UI", Trebuchet, Tahoma, Arial, sans-serif;
   font-weight: 700;
   border-radius: 0;
   border: 2px solid;
@@ -3221,12 +3221,38 @@ input[type="button"].btn-block {
   width: 100%;
 }
 footer {
-  height: 100px;
   margin: 10px 0;
   padding: 35px 0;
 }
-footer p {
-  padding: 5px 0;
+.social {
+  margin-bottom: 30px;
+}
+.social .navbar-nav li > a {
+  padding: 10px 15px;
+}
+.social .navbar-nav li:not(:last-child) {
+  margin-right: 30px;
+}
+.social .facebook > a {
+  color: #3B5998;
+}
+.social .twitter > a {
+  color: #00ACED;
+}
+.social .instagram > a {
+  color: #8A3AB9;
+}
+.social .youtube > a {
+  color: #BB0000;
+}
+.social .google-plus > a {
+  color: #DD4B39;
+}
+.footer-nav li {
+  font-size: 12px;
+}
+.footer-nav li:not(:last-child) {
+  margin-right: 50px;
 }
 .fade {
   opacity: 0;
@@ -3937,8 +3963,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -4106,15 +4130,55 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
     margin: 0;
+    text-align: center;
   }
   .navbar-nav > li {
-    float: left;
+    display: inline-block;
   }
   .navbar-nav > li > a {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav,
+  .secondary-nav .navbar-nav {
+    display: table;
+    width: 100%;
+  }
+  .navbar-default .navbar-nav > li,
+  .secondary-nav .navbar-nav > li {
+    display: table-cell;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav {
+    display: table;
+    width: 100%;
+  }
+  .navbar-default .navbar-nav > li {
+    display: table-cell;
+  }
+  .navbar-default .navbar-nav > li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .navbar-default .navbar-nav > li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+}
+.secondary-nav .navbar-nav {
+  font-size: 13px;
+}
+.secondary-nav .navbar-nav .brand {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .secondary-nav .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 .navbar-form {
@@ -5690,7 +5754,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5808,7 +5872,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6023,19 +6087,9 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0);
 }
-.carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-}
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -6047,8 +6101,8 @@ button.close {
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right {
+.carousel-control .fa-chevron-left,
+.carousel-control .fa-chevron-right {
   position: absolute;
   top: 50%;
   margin-top: -10px;
@@ -6056,14 +6110,14 @@ button.close {
   display: inline-block;
 }
 .carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
-  left: 50%;
-  margin-left: -10px;
+.carousel-control .fa-chevron-left {
+  left: 30%;
+  margin-left: -5px;
 }
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
-  right: 50%;
-  margin-right: -10px;
+.carousel-control .fa-chevron-right {
+  right: 30%;
+  margin-right: -5px;
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
@@ -6123,8 +6177,8 @@ button.close {
   text-shadow: none;
 }
 @media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .fa-chevron-left,
+  .carousel-control .fa-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
     width: 30px;
@@ -6132,11 +6186,11 @@ button.close {
     margin-top: -10px;
     font-size: 30px;
   }
-  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .fa-chevron-left,
   .carousel-control .icon-prev {
     margin-left: -10px;
   }
-  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .fa-chevron-right,
   .carousel-control .icon-next {
     margin-right: -10px;
   }

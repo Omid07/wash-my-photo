@@ -1,9 +1,54 @@
 footer {
-  height: 100px;
   margin: 10px 0;
   padding: 35px 0;
+}
 
-  p {
-    padding: 5px 0;
+.social {
+  margin-bottom: 30px;
+
+  .navbar-nav {
+    li {
+      > a {
+        padding: 10px 15px;
+      }
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .facebook {
+    > a {
+      color: @facebook;
+    }
+  }
+  .twitter {
+    > a {
+      color: @twitter;
+    }
+  }
+  .instagram {
+    > a {
+      color: @instagram;
+    }
+  }
+  .youtube {
+    > a {
+      color: @youtube;
+    }
+  }
+  .google-plus {
+    > a {
+      color: @googleplus;
+    }
+  }
+}
+
+.footer-nav {
+  li {
+    font-size: 12px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }

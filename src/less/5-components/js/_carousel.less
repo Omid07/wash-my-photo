@@ -107,12 +107,12 @@
 
   // Set gradients for backgrounds
   &.left {
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.5); @end-color: rgba(0,0,0,.0001));
+    // #gradient > .horizontal(@start-color: rgba(0,0,0,.5); @end-color: rgba(0,0,0,.0001));
   }
   &.right {
     left: auto;
     right: 0;
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
+    // #gradient > .horizontal(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
   }
 
   // Hover/focus state
@@ -127,8 +127,8 @@
   // Toggles
   .icon-prev,
   .icon-next,
-  .glyphicon-chevron-left,
-  .glyphicon-chevron-right {
+  .fa-chevron-left,
+  .fa-chevron-right {
     position: absolute;
     top: 50%;
     margin-top: -10px;
@@ -136,14 +136,14 @@
     display: inline-block;
   }
   .icon-prev,
-  .glyphicon-chevron-left {
-    left: 50%;
-    margin-left: -10px;
+  .fa-chevron-left {
+    left: 30%;
+    margin-left: -5px;
   }
   .icon-next,
-  .glyphicon-chevron-right {
-    right: 50%;
-    margin-right: -10px;
+  .fa-chevron-right {
+    right: 30%;
+    margin-right: -5px;
   }
   .icon-prev,
   .icon-next {
@@ -237,8 +237,8 @@
 
   // Scale up the controls a smidge
   .carousel-control {
-    .glyphicon-chevron-left,
-    .glyphicon-chevron-right,
+    .fa-chevron-left,
+    .fa-chevron-right,
     .icon-prev,
     .icon-next {
       width: (@carousel-control-font-size * 1.5);
@@ -246,11 +246,11 @@
       margin-top: (@carousel-control-font-size / -2);
       font-size: (@carousel-control-font-size * 1.5);
     }
-    .glyphicon-chevron-left,
+    .fa-chevron-left,
     .icon-prev {
       margin-left: (@carousel-control-font-size / -2);
     }
-    .glyphicon-chevron-right,
+    .fa-chevron-right,
     .icon-next {
       margin-right: (@carousel-control-font-size / -2);
     }
