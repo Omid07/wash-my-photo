@@ -1,0 +1,60 @@
+<!-- signup.html -->
+{% extends "layout.html" %}
+
+
+  {% block content %}
+    <section class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <h4 class="text-center">Sign Up Form</h4>
+        <br>
+        <form>
+          <div class="form-group">
+            <label for="user-name">Your Name</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-fw fa-user" aria-hidden="true"></i></div>
+              <input type="text" class="form-control" id="user-name" placeholder="John Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="user-email">Email address</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i></div>
+              <input type="email" class="form-control" id="user-email" placeholder="johnsmith@exaple.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="user-phone">Mobile Number</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-fw fa-mobile" aria-hidden="true"></i></div>
+              <input type="text" class="form-control" id="user-phone" placeholder="01XXX-123456">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-fw fa-key" aria-hidden="true"></i></div>
+              <input type="password" class="form-control" id="password" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password-repeat">Re-enter Password</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-fw fa-key" aria-hidden="true"></i></div>
+              <input type="password" class="form-control" id="password-repeat" placeholder="">
+            </div>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> I accept the Terms &amp; Conditions
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked=""> Sign me up for Newsletter
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary pull-right">Sign Up</button>
+        </form>
+      </div>
+    </section>
+  {% endblock %}
