@@ -1,0 +1,35 @@
+<!-- signup.html -->
+{% extends "layout.html" %}
+
+
+  {% block content %}
+    <section class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <h4 class="text-center">Sign Up Form</h4>
+        <br>
+        <form>
+          <div class="form-group">
+            <label for="user-name">Your Name</label>
+            <input type="text" class="form-control" id="user-name" placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label for="user-email">Email address</label>
+            <input type="email" class="form-control" id="user-email" placeholder="johnsmith@exaple.com">
+          </div>
+          <div class="form-group">
+            <label for="user-phone">Mobile Number</label>
+            <input type="number" class="form-control" id="user-phone" placeholder="01XXX-123456">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="password-repeat">Re-enter Password</label>
+            <input type="password" class="form-control" id="password-repeat" placeholder="">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </section>
+  {% endblock %}
